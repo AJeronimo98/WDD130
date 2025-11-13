@@ -1,64 +1,72 @@
+:root {
+  --primary-color: darkblue;
+  --light-color: white;
+  --secondary-text-color: #333;
+  --aside-bg-color: #eee;
+  --border-color: black;
+  
+  --spacing-unit: 1rem;
+  --padding-nav: 10px;
+  --spacing-footer-margin: 15px;
+  
+  --max-width-main: 840px;
+  
+  --shadow-standard: 0 0 30px gray;
+  --border-subtle: 1px solid rgb(0 0 0 / 0.2);
+}
+
 nav {
-  background-color: darkblue;
-  padding: 10px;
+  background-color: var(--primary-color);
+  padding: var(--padding-nav);
 }
 
 nav a {
-  color: white;
+  color: var(--light-color);
   display: block;
   padding: 20px;
 }
 
 h1 {
-  color: darkblue;
+  color: var(--primary-color);
 }
 
-/* General image styles - specific widths are set later */
 img {
-  /* Removed 'width: 150px;' as it's better defined in main img/aside img */
   height: auto; 
-  border: 1px solid black; 
+  border: 1px solid var(--border-color); 
   padding: 2px;
-  box-shadow: 0 0 30px gray;
+  box-shadow: var(--shadow-standard);
 }
-
-/* --- REQUIRED STYLES BELOW THIS LINE --- */
 
 main {
-  max-width: 840px; /* REQUIRED */
+  max-width: var(--max-width-main);
 }
 
-/* REQUIRED aside selector styles */
 aside {
   width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2); 
-  padding: 1rem;
-  background-color: #eee;
-  color: #333; /* ⭐ CORRECCIÓN AQUÍ: Se añade el color de texto ⭐ */
+  margin: var(--spacing-unit);
+  border: var(--border-subtle);
+  padding: var(--spacing-unit);
+  background-color: var(--aside-bg-color);
+  color: var(--secondary-text-color);
   text-align: center;
 }
 
-/* REQUIRED aside img styles */
 aside img {
   width: 200px;
   height: auto;
 }
 
-/* REQUIRED main img (profile image) styles */
 main img {
   width: 150px;
   height: auto;
 }
 
-/* REQUIRED p selector modification */
 p {
   padding: 0;
 }
 
-/* REQUIRED footer styles */
 footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
+  margin-top: var(--spacing-footer-margin);
+  border-top: 1px solid var(--border-color);
   text-align: center;
 }
