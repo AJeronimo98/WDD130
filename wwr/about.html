@@ -13,18 +13,19 @@
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Rafting Site Logo" width="150">
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Rafting Site Logo" width="150">
+        </a>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
-        <!-- SECCIÓN HERO con Overlay -->
         <div class="hero">
             <img src="images/Hero.jpg" alt="People rafting on a river">
             <h1>Adventure Expeditions</h1>
@@ -39,34 +40,69 @@
             </article>
         </div>
 
-        <!-- HISTORY SECTION -->
-        <section>
+        <section class="history-section">
             <h2>History</h2>
-            <p>
-                Founded in 1985 by a group of passionate river guides, Adventure Expeditions started with a single raft
-                and a dream to share the excitement of the rapids. Over the decades, we’ve grown into a leading rafting
-                outfitter, but our core values—respect for the river and joy in the journey—remain unchanged. We operate
-                on the highest safety standards and continuously train our team to ensure the best possible experience
-                for both beginners and seasoned adventurers.
-            </p>
+            <div class="history-content">
+                <img src="images/history_photo.jpg" alt="Historical image of river running">
+                <div>
+                    <p>
+                        Founded in 1985 by a group of passionate river guides, Adventure Expeditions started with a
+                        single raft
+                        and a dream to share the excitement of the rapids. Over the decades, we’ve grown into a leading
+                        rafting
+                        outfitter, but our core values—respect for the river and joy in the journey—remain unchanged.
+                    </p>
+                    <p>
+                        We operate on the highest safety standards and continuously train our team to ensure the best
+                        possible experience
+                        for both beginners and seasoned adventurers. Our commitment to safety and environmental
+                        stewardship guarantees
+                        that the river remains pristine for generations of adventurers to come.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <!-- ADVENTURE SECTION -->
-        <section>
+        <section class="adventures-section">
             <h2>Adventure Awaits You!</h2>
+            <div class="adventure-grid">
+                <figure>
+                    <img src="images/adventure1.jpg" alt="Los Dientes del Diablo">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure2.jpg" alt="Big Mallard Rapid">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure4.jpg" alt="Family Fun Trip">
+                    <figcaption>Family Fun Trip</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure5.jpg" alt="Scenic Canyon Run">
+                    <figcaption>Scenic Canyon Run</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy;2025 | Adventure Expeditions | Ángel Jerónimo</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+
         <nav class="socialmedia">
-            <a href="https://facebook.com">
+            <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="Facebook Icon" width="30">
             </a>
-            <a href="https://linkedin.com">
+            <a href="https://linkedin.com" target="_blank">
                 <img src="images/linkedin.png" alt="LinkedIn Icon" width="30">
             </a>
-            <a href="https://instagram.com">
+            <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="Instagram Icon" width="30">
             </a>
         </nav>
